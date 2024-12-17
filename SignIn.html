@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https:/unicons.iconscout.com/release/v4.0.0/css/line.css-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper login">
+
+        <header class="conteiner">
+            <nav>
+                <span class="logo"><b>Cat Cafe</b></span>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul>
+                    <li><a href="CateCafe.html">Home</a></li>
+                    <li><a href="CateCafe.html" id="scrollAbout">About us</a></li>
+                    <li><a href="CateCafe.html" id="scrollMenu">Menu</a></li>
+                    <li><a href="CateCafe.html" id="scrollCats">Cats</a></li>
+                    <li><a href="GetACat.html">Get a cat</a></li>
+                    <li><a href="Pay.html">Help us</a></li>
+                    <li class="btn"><a href="CateCafe.html" id="scrollContacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="forms">
+
+            <div class="sign--in signIn">
+                <form action="">
+                    <h1>LOGIN</h1>
+                    <div class="input--box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="input--box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div class="remember">
+                        <label for=""><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Login</button>
+
+                    <div class="register--link">
+                        <p>Don't have an account?<a href="#" class="text signUp-link">Signup now</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sign--in registration">
+                <form action="">
+                    <h1>REGISTRATION</h1>
+                    <div class="input--box">
+                        <input type="text" placeholder="Full name" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="input--box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="input--box">
+                        <input type="text" placeholder="Email" required>
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="input--box">
+                        <input type="text" placeholder="Phone number" required>
+                        <i class='bx bx-phone'></i>
+                    </div>
+                    <div class="input--box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div class="input--box">
+                        <input type="password" placeholder="Confirm password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div class="remember">
+                        <label for=""><input type="checkbox">Remember me</label>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+
+                    <div class="register--link">
+                        <p>Already have an account?<a href="#" class="text login-link">Login now</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer id="Contacts">
+            <div class="conteiner contact">
+                <div>
+                    <span class="logo">CatCafe</span>
+                    <p>Site developed: Korotaeva Angelina</p>
+                </div>
+                <div>
+                    <h4>About us</h4>
+                    <ul>
+                        <li>12-21h every day</li>
+                        <li>Hlavna ulice 57, 53011, Pardubice</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact us</h4>
+                    <p>cutecats@gmail.com</p>
+                    <p>+420 774 555 555</p>
+                </div>
+            </div>
+            <hr>
+            <p>2024 CatCafe</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js">
+    </script>
+
+    <script>
+        document.getElementById('scrollContacts').addEventListener('click', function() {
+            document.getElementById('Contacts').scrollIntoView({ behavior: 'smooth' });
+        });
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

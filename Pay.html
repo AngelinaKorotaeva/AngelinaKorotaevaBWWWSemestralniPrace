@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="conteiner">
+            <nav>
+                <span class="logo"><b>Cat Cafe</b></span>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul>
+                    <li><a href="CateCafe.html">Home</a></li>
+                    <li><a href="CateCafe.html" id="scrollAbout">About us</a></li>
+                    <li><a href="CateCafe.html" id="scrollMenu">Menu</a></li>
+                    <li><a href="CateCafe.html" id="scrollCats">Cats</a></li>
+                    <li><a href="GetACat.html">Get a cat</a></li>
+                    <li class="active"><a href="Pay.html">Help us</a></li>
+                    <li class="btn"><a href="CateCafe.html" id="scrollContacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="payment">
+            <form action="">
+                <div class="row">
+                    <div class="column">
+                        <h3 class="title">Billing Address</h3>
+                        <div class="boxes">
+                            <input type="text" placeholder="Full name">
+                        </div>
+                        <div class="boxes">
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="boxes">
+                            <input type="text" placeholder="Street-number-psc">
+                        </div>
+                        <div class="flex">
+                            <div class="boxes">
+                                <input type="text" placeholder="City">
+                            </div>
+                            <div class="boxes">
+                                <input type="text" placeholder="State">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="title">Payment</h3>
+                        <div class="boxes">
+                            <span>Card Accepted:</span>
+                            <img src="img/payCard.png" alt="">
+                        </div>
+                        <div class="boxes">
+                            <input type="text" placeholder="Name on card">
+                        </div>
+                        <div class="boxes">
+                            <input type="number" placeholder="Credit card number">
+                        </div>
+                        <div class="boxes">
+                            <input type="text" placeholder="Month">
+                        </div>
+                        <div class="flex">
+                            <div class="boxes">
+                                <input type="number" placeholder="Year">
+                            </div>
+                            <div class="boxes">
+                                <input type="number" placeholder="CVV">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="submit">Submit</a>
+            </form>
+        </div>
+
+        <footer id="Contacts">
+            <div class="conteiner contact">
+                <div>
+                    <span class="logo">CatCafe</span>
+                    <p>Site developed: Korotaeva Angelina</p>
+                </div>
+                <div>
+                    <h4>About us</h4>
+                    <ul>
+                        <li>12-21h every day</li>
+                        <li>Hlavna ulice 57, 53011, Pardubice</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact us</h4>
+                    <p>cutecats@gmail.com</p>
+                    <p>+420 774 555 555</p>
+                </div>
+            </div>
+            <hr>
+            <p>2024 CatCafe</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
