@@ -24,6 +24,7 @@ The website represents a cat café and includes several pages for visitors, such
 
 ## Project Structure
 
+```text
 ├── css/
 ├── img/
 ├── CateCafe.html
@@ -32,6 +33,7 @@ The website represents a cat café and includes several pages for visitors, such
 ├── Rezervation.html
 ├── SignIn.html
 └── script.js
+```
 
 ## How to Run
 
