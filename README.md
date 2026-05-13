@@ -41,6 +41,6 @@ Open CateCafe.html in a web browser.
 
 No installation is required.
 
-Purpose
+## Purpose
 
 The purpose of this project is to demonstrate basic web development skills, including page layout, styling, navigation, and simple interactive functionality.
